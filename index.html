@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Convidados Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <header>
+            <h1>Gestão de Convidados</h1>
+            <div class="input-group">
+                <input type="text" id="novoNome" placeholder="Digite um nome...">
+                <button onclick="adicionarConvidado()" id="btnAdd">Add</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="lista-visual" id="listaVisual"></div>
+
+            <div class="button-grid">
+                <button onclick="transformarMaiusculas()" class="btn">TUDO MAIÚSCULO</button>
+                <button onclick="contarNomesComA()" class="btn">Começam com 'A'</button>
+                <button onclick="filtrarNomesLongos()" class="btn">Nomes Longos (>5)</button>
+            </div>
+
+            <div class="output-container">
+                <label>Resultado do Processamento:</label>
+                <div id="result" class="result-box">Aguardando comando...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
