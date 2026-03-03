@@ -1,3 +1,4 @@
+
 let convidados = ["Ana", "Bruno", "Amanda", "Carlos", "Beatriz", "Alberto", "Ricardo"];
 
 const inputNome = document.getElementById('novoNome');
